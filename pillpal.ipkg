@@ -5,7 +5,7 @@
 
 package pillpal
 
-authors    = "Bheesha Ramachandran, Ishaq Nasiru"
+authors    = "Bheesha, Ishaq Nasiru"
 maintainers = "m26steph@uwaterloo.ca"
 version    = 0.1.0
 brief      = "Formally verified smart pill-box system"
