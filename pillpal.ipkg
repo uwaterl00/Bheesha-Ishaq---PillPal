@@ -1,0 +1,43 @@
+-- PillPal Pro — Formally Verified Pill Dispenser Firmware & Backend
+-- Authors : Bheesha Ramachandran & Ishaq Nasiru (PillPal)
+-- Contact : m26steph@uwaterloo.ca
+-- Verified : Idris2 — no holes, no believe_me, no sorry-equivalents
+
+package pillpal
+
+authors    = "Bheesha Ramachandran, Ishaq Nasiru"
+maintainers = "m26steph@uwaterloo.ca"
+version    = 0.1.0
+brief      = "Formally verified smart pill-box system"
+
+sourcedir  = "src"
+
+modules =
+  PillPal.Types.Core
+, PillPal.Types.Time
+, PillPal.Types.Firebase
+, PillPal.Types.Hardware
+, PillPal.Types.Notification
+, PillPal.Core.Schedule
+, PillPal.Core.StateMachine
+, PillPal.Core.Buzzer
+, PillPal.Core.LED
+, PillPal.Firebase.Schema
+, PillPal.Firebase.Client
+, PillPal.Hardware.ESP32
+, PillPal.Hardware.Button
+, PillPal.Notification.Pushcut
+, PillPal.WebApp.Schema
+, PillPal.WebApp.Dashboard
+, PillPal.WebApp.DrugInfo
+, PillPal.Proofs.ScheduleCorrect
+, PillPal.Proofs.StateMachineSound
+, PillPal.Proofs.LEDInvariant
+, PillPal.Main
+
+depends = base >= 0.7.0
+        , contrib >= 0.7.0
+        , network >= 0.1.0
+        , json >= 0.5.0
+
+langversion >= 0.7.0
