@@ -1,5 +1,5 @@
 ||| PillPal Pro — Buzzer Control Logic
-||| Authors  : Bheesha Ramachandran & Ishaq Nasiru (PillPal)
+||| Authors  : Bheesha & Ishaq Nasiru (PillPal)
 ||| Contact  : m26steph@uwaterloo.ca
 ||| Verified : Total, no holes, no believe_me
 module PillPal.Core.Buzzer
